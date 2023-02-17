@@ -5,6 +5,7 @@ let ip: string = "";
 let ip2: string = "";
 let blob: Blob;
 let url: string;
+let DoH: string;
 let generate = () => {
     if(ip === ""){
         return;
@@ -42,7 +43,7 @@ let generate = () => {
                         <string>${ip2}</string>
 					</array>
                     <key>ServerURL</key>
-					<string>https://security.cloudflare-dns.com/dns-query</string>
+					<string>${DoH}</string>
 				</dict>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
@@ -51,7 +52,7 @@ let generate = () => {
 				<key>PayloadUUID</key>
 				<string>${uuidv4()}</string>
 				<key>PayloadDisplayName</key>
-				<string>Custom DNS</string>
+				<string>Custom DNS: ${ip}</string>
 				<key>PayloadVersion</key>
 				<integer>1</integer>
 			</dict>
@@ -89,5 +90,7 @@ let generate = () => {
     <p>{ip}</p>
     <p>Fallback DNS: </p>
     <input bind:value={ip2} on:change={generate} on:keydown={generate}>
+    <p>DoH Server Name: </p>
+    <input bind:value={DoH} on:change={generate} on:keydown={generate}>
     <a href={url} style="display:block">Download!</a>
 </main>
