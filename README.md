@@ -1,0 +1,1 @@
+# A simple DNS setter for iDevices
