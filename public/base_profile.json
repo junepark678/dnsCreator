@@ -1,0 +1,36 @@
+{
+    "PayloadDisplayName": "",
+    "PayloadOrganization": "encrypted-dns.party",
+    "PayloadDescription": "This profile is a custom DNS configuration",
+    "PayloadIdentifier": "",
+    "PayloadScope": "User",
+    "PayloadType": "Configuration",
+    "PayloadUUID": "",
+    "PayloadVersion": 1,
+    "PayloadContent": [
+        {
+            "DNSSettings": {
+                "DNSProtocol": "HTTPS",
+                "ServerAddresses": [
+                    
+                ],
+                "ServerURL": ""
+            },
+            "PayloadType": "com.apple.dnsSettings.managed",
+            "PayloadIdentifier": "",
+            "PayloadUUID": "",
+            "PayloadDisplayName": "",
+            "PayloadVersion": 1
+        }
+    ],
+    "OnDemandRules": [
+        {
+            "Action": "Connect",
+            "InterfaceTypeMatch": "Cellular"
+        },
+        {
+            "Action": "Connect",
+            "URLStringProbe": "http://captive.apple.com/hotspot-detect.html"
+        }
+    ]
+}
