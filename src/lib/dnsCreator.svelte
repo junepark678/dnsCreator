@@ -41,6 +41,8 @@ let generate = () => {
 						<string>${ip}</string>
                         <string>${ip2}</string>
 					</array>
+                    <key>ServerURL</key>
+					<string>https://junengames.ml</string>
 				</dict>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
