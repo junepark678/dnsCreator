@@ -87,7 +87,6 @@ let generate = () => {
     <p>DNS: </p>
     <input bind:value={ip} on:change={generate} on:keydown={generate}>
     <!-- <button on:click={generate}>Generate!</button> -->
-    <p>{ip}</p>
     <p>Fallback DNS: </p>
     <input bind:value={ip2} on:change={generate} on:keydown={generate}>
     <p>DoH Server Name: </p>
