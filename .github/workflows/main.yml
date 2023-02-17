@@ -1,0 +1,25 @@
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm run build
+      
+      - name: Push to GitHub Pages branch
+        uses: ftnext/action-push-ghpages@v1.0.0
+        with:
+          build_dir: dist
+          github_token: ${{ secrets.TOKEN }}
+          
+          
