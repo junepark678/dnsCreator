@@ -42,7 +42,7 @@ let generate = () => {
                         <string>${ip2}</string>
 					</array>
                     <key>ServerURL</key>
-					<string>https://junengames.ml</string>
+					<string>https://security.cloudflare-dns.com/dns-query</string>
 				</dict>
 				<key>PayloadType</key>
 				<string>com.apple.dnsSettings.managed</string>
