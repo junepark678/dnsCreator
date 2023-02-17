@@ -14,9 +14,9 @@ let generate = () => {
 <plist version="1.0">
 	<dict>
 		<key>PayloadDisplayName</key>
-		<string>Custom DNS</string>
+		<string>Custom DNS: ${ip}</string>
 		<key>PayloadOrganization</key>
-		<string>encrypted-dns.party</string>
+		<string>junengames.ml</string>
 		<key>PayloadDescription</key>
 		<string>This profile adds a custom DNS to your iDevice</string>
 		<key>PayloadIdentifier</key>
