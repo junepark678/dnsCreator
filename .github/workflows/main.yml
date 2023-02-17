@@ -32,7 +32,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1   
         with: 
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
         
           
